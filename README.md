@@ -7,8 +7,8 @@ This project demonstrates a simple full-stack web application consisting of a fr
 ## Prerequisites
 
 Before you begin, ensure you have met the following requirements:
-- Docker and Docker Compose installed
-- Kubernetes cluster set up, I used Docker-Desktop
+- Docker
+- Kubernetes cluster set up, I used Docker-Desktop for the single node cluster
 - kubectl command-line tool installed
 
 ## Getting Started
@@ -21,9 +21,9 @@ These instructions will get you a copy of the project up and running on your loc
    ```bash
    git clone https://github.com/your-username/my-kubernetes-app.git
 
-2. Navigate into the project directory:
-    ```bash
-    cd my-kubernetes-app
+2. Navigate into the project directory
+    <!-- ```bash -->
+    <!-- cd my-kubernetes-app -->
 
 ## Frontend
 
@@ -34,6 +34,7 @@ These instructions will get you a copy of the project up and running on your loc
 4. Install the necessary npm packages:
     ```bash
     npm install express
+    
     npm install serve
 
 5. Run the front-end application (optional if using Docker):
@@ -48,7 +49,9 @@ These instructions will get you a copy of the project up and running on your loc
 
 7. Install the necessary npm packages:
     ```bash
-    npm install
+    npm install serve
+
+    npm install express
 
 8. Run the back-end server (optional if using Docker):
     ```bash
@@ -59,6 +62,7 @@ These instructions will get you a copy of the project up and running on your loc
 9. Build and run the Docker containers:
     ```bash
     docker build -t my-kubernetes-app-frontend ./src/frontend
+    
     docker build -t my-kubernetes-app-backend ./src/backend
 
 ## Deploying to Kubernetes
@@ -74,9 +78,3 @@ These instructions will get you a copy of the project up and running on your loc
 12. Access the application via the exposed service:
     ```bash
     kubectl get service frontend-service
-
-
-
-
-
-
