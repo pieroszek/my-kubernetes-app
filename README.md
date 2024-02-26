@@ -17,13 +17,9 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Setting Up the Project
 
-1. Clone the repository to your local machine:
-   ```bash
-   git clone https://github.com/your-username/my-kubernetes-app.git
+1. Clone the repository to your local machine
 
 2. Navigate into the project directory
-    <!-- ```bash -->
-    <!-- cd my-kubernetes-app -->
 
 ## Frontend
 
@@ -34,7 +30,6 @@ These instructions will get you a copy of the project up and running on your loc
 4. Install the necessary npm packages:
     ```bash
     npm install express
-    
     npm install serve
 
 5. Run the front-end application (optional if using Docker):
@@ -50,7 +45,6 @@ These instructions will get you a copy of the project up and running on your loc
 7. Install the necessary npm packages:
     ```bash
     npm install serve
-
     npm install express
 
 8. Run the back-end server (optional if using Docker):
@@ -62,7 +56,6 @@ These instructions will get you a copy of the project up and running on your loc
 9. Build and run the Docker containers:
     ```bash
     docker build -t my-kubernetes-app-frontend ./src/frontend
-    
     docker build -t my-kubernetes-app-backend ./src/backend
 
 ## Deploying to Kubernetes
